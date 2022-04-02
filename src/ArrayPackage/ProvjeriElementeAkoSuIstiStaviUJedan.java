@@ -21,7 +21,7 @@ public class ProvjeriElementeAkoSuIstiStaviUJedan {
         int [][] sales={{1,50},{2,40},{1,30},{4,7}};  //ovaj array prima u metodu
 
         int [][] sums=smartphoneSales(sales);  //ovaj vraca
-
+//pozvati metodu i ispisati novi niz na konzolu, dvodimenzionalni
         for(int i=0; i<sums.length; i++) {  //kad imam dvodimenzionalni kao parametar ovako printam
                                              //sa for + sout(Arras.toString()
             System.out.println(Arrays.toString(sums[i]));  //ovom linijom mogu printati samo jednodimenzionalni niz
