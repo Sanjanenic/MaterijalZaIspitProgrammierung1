@@ -32,14 +32,14 @@ public class VratiArrayNapravljenOdDvaArrayParametra {
             indexKurzer=namen2.length;
         }
         String [] trostpreisGewinnerInnen= new String [indexKurzer];  //pravim array koji trebam vratiti ovom metodom
-        String hilfe =" ";
 
+        String hilfe =" ";
 
         for (int i=0; i< namen1.length;i++){         //idem kroz prvi array
             for(int i2=0; i2<namen2.length; i2++) {  //idem kroz drugi array
                 if (namen1[i] == namen2[i2]){         //if-om biram elemente koje stavljam u niz koji trebam vratiti
                     hilfe= namen1[i];
-                    trostpreisGewinnerInnen[i]=hilfe;
+                    trostpreisGewinnerInnen[i]=hilfe;  //ova linija upisuje vrijednosti u novi niz
                 }
             }
         }
