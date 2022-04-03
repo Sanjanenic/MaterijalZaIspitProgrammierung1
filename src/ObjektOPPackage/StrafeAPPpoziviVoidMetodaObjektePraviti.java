@@ -38,8 +38,8 @@ public class StrafeAPPpoziviVoidMetodaObjektePraviti {
                 ", hat "+ erste.anzahl+ " Strafe von  "+erste.strafe+ " Euro" );
 
         //poziv metode koja vraca nesto(boolean ovaj put)
-        double strafe = erste.getStrafe();  //pomocna varijabla u koju sacuvam vrijednost koju vraca metoda
-
+        //pomocna varijabla u koju sacuvam vrijednost koju vraca metoda
+        double strafe = erste.getStrafe();
         System.out.println(erste.name + " " +erste.nachname + " ,Kennezeichnen:" + erste.kennzeichnen+
                 ", hat "+ erste.anzahl+ " Strafe von  " +strafe+ " Euro" );
 }

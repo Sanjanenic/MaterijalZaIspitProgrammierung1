@@ -65,7 +65,7 @@ public class StrafeClassSaVoidMetodamaiBooleanMetodama {
         strafe=strafe+wert;
         anzahl+=1;
     }
-//metoda koja smanjuje kaznu za odredjeni postatak na osnovu proja prekrsaja
+//metoda koja smanjuje kaznu za odredjeni postatak na osnovu broja prekrsaja
     public double getStrafe(){
         double strafeReduziert=0;  //pomocna varijabla
 
