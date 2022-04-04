@@ -15,7 +15,7 @@ package ArrayPackage;
 
 import java.util.Arrays;
 
-public class ProvjeriElementeAkoSuIstiStaviUJedan {
+public class ProvjeriElementeAkoSuIstiStaviUJedanISaberi {
     public static void main(String[] args) {
 
         int [][] sales={{1,50},{2,40},{1,30},{4,7}};  //ovaj array prima u metodu

@@ -21,10 +21,11 @@ public class SmartphonesBeispiel {
     }
 
     public static void prodajaPoKvartalimaZaTelefone(String[] telefoni, int [][]prodajapoKvartalima) {
-
-        for (int i = 0; i < prodajapoKvartalima.length; i++) {  //dvije for petlje idu kroz dupli array,
-            System.out.println(telefoni[i]);                    //izmedju njih ovo printa imena iz prvog niza
-            //prema indexu
+//dvije for petlje idu kroz dupli array,
+// izmedju njih ovo printa imena iz prvog niza
+        //prema indexu
+        for (int i = 0; i < prodajapoKvartalima.length; i++) {
+            System.out.println(telefoni[i]);
 
             for (int j = 0; j < prodajapoKvartalima[i].length; j++) {
                 System.out.println(prodajapoKvartalima[i][j]);

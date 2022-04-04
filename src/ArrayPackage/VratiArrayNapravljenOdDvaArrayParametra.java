@@ -48,3 +48,17 @@ public class VratiArrayNapravljenOdDvaArrayParametra {
 
 }
 
+//ukoliko se trazi da se porede Stringovi a ne da radim novi niz onda je ovo rijesenje:
+//public static String[] luckyLooser(String[] first, String[] second){
+//    String[] l = new String[first.length > second.length ? first.length : second.length];  //brzi nacin za if
+//    int nextIdx = 0;
+//    for(int f = 0; f < first.length; ++f){
+//        for(int s = 0; s < second.length; ++s ){
+//            if(first[f].equals(second[s])){
+//                l[nextIdx++] = first[f];
+//                break;
+//            }
+//        }
+//    }
+//    return l;
+//}

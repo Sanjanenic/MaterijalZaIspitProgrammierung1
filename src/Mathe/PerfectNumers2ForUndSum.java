@@ -1,4 +1,4 @@
-package Mhate;
+package Mathe;
 
 public class PerfectNumers2ForUndSum {
     public static void main(String[] args) {

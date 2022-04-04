@@ -7,6 +7,7 @@ public class SumArrayElementeMitWhileLoop {
                 98, 97, 87, 86, 3, 81, 77, 74, 72, 69, 68, 65, 61,
                 51, 52, 59, 54, 47, 111, 42, 38, 51, 37, 29, 24, 81,
                 12, 29, 2, 17, 8, 0};
+
    //zatim pozvati metodu ovako pomocu pomocne varijable koja sacuvava vrijednost koju metoda vraca
 int rezultatt=sumirajElemente(arr);
         System.out.println(rezultatt);
@@ -37,15 +38,28 @@ int rezultatt=sumirajElemente(arr);
         //sum je pomocna varijabla koju metoda vraca
         int sum =0;
         int i =0;
-        int j=0;
-        while((i>=0 && i< arr.length) && j< arr[i].length+1){
-            sum=sum+arr[i][j];
+
+        while(i< arr.length){
+            int j=0;  // mora biti izmedji vanjske i unutrasnjeyzasto sto tako krece opet iz pocetka je u while petlji
+            //j se ne resetuje da ide opet ispocetka kao u for petlji
+            while (j<arr[i].length){
+                sum=sum+arr[i][j];
+                j++;
+            }
             i++;
-            j++;
 
         }
-
         return sum;
+    }
+
+    public static void replace(int searchNumber, int newNumber, int[][] array) {
+        for(int i=0; i< array.length; i++) {
+            for(int j=0; j<array[i].length; j++) {
+                if(array[i][j]==searchNumber) {
+                    array[i][j]=newNumber;
+                }
+            }
+        }
     }
 
 //while(i<10){
