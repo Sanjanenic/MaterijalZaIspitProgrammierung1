@@ -7,7 +7,6 @@ public class Mitarbeiter {
     public int age;
 
 
-
     public double monatsAbrechnung()
     {
         return jahresAbrechnung()/12;
