@@ -8,7 +8,6 @@ public class LoockyLooserPoredjenjeStringovaUDvaArray {
         String namen1[]={"Lara","Sara","Lisa","Liv","Iv" };
         String namen2[]={"Sara","Julia", "Liv","Iva","Mira"};
         System.out.println(Arrays.toString(luckyLooser(namen1, namen2)));
-
     }
 
     //metoda prolazi kroz dva niza stringova i poredi elemnte, zatim pravi novi niz od
@@ -26,4 +25,14 @@ public class LoockyLooserPoredjenjeStringovaUDvaArray {
         }
         return erg;
     }
+
 }
+
+//if(first.length> second.length){
+//            return  first.length;
+//        }
+//        else {
+//        return second.length;
+//        }
+
+//duza verzija if else

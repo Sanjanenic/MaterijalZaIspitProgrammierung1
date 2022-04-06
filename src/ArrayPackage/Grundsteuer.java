@@ -12,8 +12,9 @@ public class Grundsteuer {
         }
         return summe;
     }
-    //
+    //metoda pravi novi niz ownera od 25 clanova
     public double [] grundsteuerZuordnen(int [][]g, int []owner){
+        // nizu owner su ineksi od erg
         double []erg = new double[25];
         double [] prices = {3.2, 2.1, 0.9};
 

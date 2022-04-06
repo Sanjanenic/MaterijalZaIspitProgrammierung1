@@ -19,15 +19,15 @@ public class SwitschBeispiele {
 
     }
     public static String getGradeText1(int grade) {
-        String gradeText;
+
         return switch (grade) {
-            case 1 -> gradeText = "Outstanding";
-            case 2 -> gradeText = "Excellent";
-            case 3 -> gradeText = "Acceptable";
-            case 4 -> gradeText = "Passing";
-            case 5 -> gradeText = "Fail";
+            case 1 ->   "Outstanding";
+            case 2 ->  "Excellent";
+            case 3 ->  "Acceptable";
+            case 4 ->  "Passing";
+            case 5 -> "Fail";
             //bei switch braucht man immer ein default
-            default -> gradeText = null;
+            default ->  null;
         }; //hier braucht man ein Semikolon!
     }
     //oder kürzer

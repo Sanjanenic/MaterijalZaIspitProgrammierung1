@@ -7,15 +7,17 @@ public class ScannerStringVokalDaLiJe {
         CheckLetter() ;
 
     }
-
     public static void CheckLetter() {
         String letter;
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter an letter!");
-        letter = sc.nextLine();
 
-        String n = "0";
-        while (!letter.equals(n)){
+        do{
+            letter = sc.nextLine();
+
+            if(letter.equals("0")){
+                break;
+            }
             String a = "a";
             String e = "e";
             String u = "u";
@@ -24,15 +26,14 @@ public class ScannerStringVokalDaLiJe {
 
             if (letter.equals(a) || letter.equals(e) || letter.equals(u) || letter.equals(o) || letter.equals(in)) {
                 System.out.println("It is a vowel!");
-                letter = sc.nextLine();
             }
             else{
                 System.out.println("It is a consonant!");
-                sc.close();
-                break;
             }
         }
+        while (true);  //semikolon hier bei do while, ovo tue znaci radi beskonacno
 
+        sc.close();
     }
 }
 
