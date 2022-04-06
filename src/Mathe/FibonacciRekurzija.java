@@ -31,8 +31,8 @@ public class FibonacciRekurzija {
             // und rufen dann die Methode wieder auf, <- REKURSION!
             // nur hat a nun den Wert von b
             // und b bekommt den Wert von ergebnis
-            a = b;  //u prvi clan sabiranja stavi drugi clan
-            b = ergebnis;  //u dugi stavi zbir prvog i drugog
+            a = b;                   //u prvi clan sabiranja stavi drugi clan
+            b = ergebnis;            //u dugi stavi zbir prvog i drugog
             fibonacciRekursiv(a, b);
 
 

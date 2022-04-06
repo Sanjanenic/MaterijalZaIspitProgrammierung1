@@ -1,6 +1,6 @@
 package ArrayPackage;
 
-public class SmartphonesBeispiel {
+public class SmartphonBeispielISumiranje {
     public static void main(String[] args) {
         String[] telefoni = {"Nokia", "Samsung", "Iphone", "Huawei"};
 
@@ -14,6 +14,8 @@ public class SmartphonesBeispiel {
 
         int sum =godisnjaProdaja(0,prodajaPoKvartalu);
         System.out.println(sum);
+
+        System.out.println("----------------------");
 
         String najprodavaijiTelefon=NajprodavanijiTelefonKvartalno(telefoni,prodajaPoKvartalu,1);
         System.out.println(najprodavaijiTelefon);
@@ -34,7 +36,7 @@ public class SmartphonesBeispiel {
 
     }
 
-    //index telefona je ovdje i,sumiram po jednom redu koji dobijem u parametru
+    //index telefona je ovdje isto sto i i u duplom nizu,sumiram po jednom redu koji dobijem u parametru
     //zato mi treba samo unutrasnja for petlja sa j.
 
     //ako bih trebala sumirati sve brojeve u matrici onda ide isto ovako sa dvije for petlje
@@ -48,6 +50,7 @@ public class SmartphonesBeispiel {
         if(indexTelefona<0 || indexTelefona>=prodajaPoKvartalima.length){
             return -1;
         }
+
         int sumProdaja=0;
         for (int j = 0; j < prodajaPoKvartalima[indexTelefona].length; j++) {
             sumProdaja = sumProdaja + prodajaPoKvartalima[indexTelefona][j];
@@ -56,6 +59,7 @@ public class SmartphonesBeispiel {
         return sumProdaja;
 
     }
+
     public static String NajprodavanijiTelefonKvartalno( String[]telefoni, int [][]prodajapoKvartalu, int kvartal){
         if(kvartal<=0 || kvartal>prodajapoKvartalu.length){
             return "";
@@ -71,8 +75,8 @@ public class SmartphonesBeispiel {
         for(int i =0; i<prodajapoKvartalu.length; ++i){
             kolonaKvartalUkomTrazimNajveci[i]=prodajapoKvartalu[i][kvartal-1];
             //kvartal je moje j, dobijem ga u parametru i ne mijenja se
-        }                                                              //sad je niz jednodimenzionalni napravljen for petljom
-
+              //sad je niz jednodimenzionalni napravljen for petljom
+        }
         //pozivam metodu ispod koja racuna index najveceg broja (i iz duplog niza) u nizu i sacuvavam
         //vrijednost u  pomocni int indexNajptodavanijeg
 

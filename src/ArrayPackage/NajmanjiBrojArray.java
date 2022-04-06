@@ -30,7 +30,7 @@ public class NajmanjiBrojArray {
                 indexKleinsteZahl=i;
             }
         }
-        return indexKleinsteZahl;  //ukoliko trebam vratiti broj najveci a ne njegov indeks
+        return indexKleinsteZahl;  //ovako je za vratiti index elementa niza //ukoliko trebam vratiti broj najveci a ne njegov indeks
                                    //bilo bi: return kleinsteZahl=niz[i] u ovoj metodi;
     }
 

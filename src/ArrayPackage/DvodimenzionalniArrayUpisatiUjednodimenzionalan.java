@@ -13,20 +13,21 @@ public class DvodimenzionalniArrayUpisatiUjednodimenzionalan {
 
     public static int[] getFlatArray(int[][] numbers){
 
+//pomocni array koji ce metoda vratiti
         int []flat=new int[numbers.length*numbers[0].length];
-        int zahler=0;  //pomocna varijabla koja broji elemente dvodimenzionalnog
-        //i tako odredjuje duzinu novog niza koji ce metoda vratiti
 
-        for(int index=0; index<numbers.length;index++){
-            for(int indexHorisontal=0; indexHorisontal<numbers[index].length; ++indexHorisontal){
-                flat[zahler]= numbers[index][indexHorisontal];
+        //pomocna varijabla koja broji elemente dvodimenzionalnog
+        //i tako odredjuje duzinu novog niza koji ce metoda vratiti
+        int zahler=0;
+
+        for(int i=0; i<numbers.length;i++){
+            for(int j=0; j<numbers[i].length; ++j){
+                flat[zahler]= numbers[i][j];
                 zahler++;
             }
         }
-
         return flat;
     }
-
 }
 
 

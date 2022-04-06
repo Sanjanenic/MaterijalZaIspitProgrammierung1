@@ -30,7 +30,7 @@ public class SrednjaVrijednostUSvakojLinijiDvodimenzionalni {
             average = 0.0f;                         // average takodje
             for (int j = 0; j < niz[i].length; j++) {
 
-                if (i == 0) {                               //svaki if racuna sa jednu liniju duplog arraya
+                if (i == 0) {                               //svaki if racuna za jednu liniju duplog arraya
                     sumPerline = (sumPerline + niz[i][j]);
                     average = sumPerline / niz.length;
                 }

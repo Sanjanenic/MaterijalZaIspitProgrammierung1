@@ -18,9 +18,7 @@ public class ObrnutiRedosledElemenataArray {
         int[] result = new int[original.length];
         for(int i=0; i<=original.length-1; i++){
             result[i]=original[original.length-1-i];
-
         }
         return result;
-
 }
 }

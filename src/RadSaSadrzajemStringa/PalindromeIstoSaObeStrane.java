@@ -14,14 +14,14 @@ public class PalindromeIstoSaObeStrane {
     }
     //metoda koja poredi elemnte Stringa
     public static boolean isPalindrome(String potentialPalindrome){
-        potentialPalindrome = potentialPalindrome.toLowerCase();
-        potentialPalindrome =potentialPalindrome.replace("'", "");
+        potentialPalindrome = potentialPalindrome.toLowerCase(); //ovo sluzi da eliminise problem Velikog slova na pocetku nekih rijeci
+        potentialPalindrome =potentialPalindrome.replace("'", "");  //eliminise ostale znakove koji se pojavljuju
         potentialPalindrome =potentialPalindrome.replace(",", "");
         potentialPalindrome =potentialPalindrome.replace(" ", "");
 
         char firstLetter = potentialPalindrome.charAt(0);
         char lastLetter = potentialPalindrome.charAt((potentialPalindrome.length()-1));
-
+//sada kada smo definisali nase Char radimo poredjenje u if
         if (firstLetter == lastLetter){
             potentialPalindrome = potentialPalindrome.substring(1,potentialPalindrome.length()-1);  //Substring index ima od 1
             if(potentialPalindrome.length()<=1){

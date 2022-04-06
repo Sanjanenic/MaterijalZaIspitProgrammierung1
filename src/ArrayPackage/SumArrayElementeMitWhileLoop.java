@@ -12,11 +12,28 @@ public class SumArrayElementeMitWhileLoop {
 int rezultatt=sumirajElemente(arr);
         System.out.println(rezultatt);
 
+//pozvati metodu koja sumira u duplom array
         int[][] arrdupli={{1,2,3},{10,20,30}};
         int rezultat2=sumirajElemente2(arrdupli);
         System.out.println(rezultat2);
 
+
+        //pozvati metodu koja mijenja elemnat u nizu, void tipa
+
+        int[][] ime = new int[][] {{24,56,78},{23,56,32}};
+        replace(24,1000,ime);
+
+        for(int zeile=0; zeile <ime.length; ++zeile) {
+
+            for (int spalte = 0; spalte < ime[zeile].length; ++spalte) {
+
+                System.out.print(ime[zeile][spalte]+"\t");
+            }
+            System.out.println();
+        }
+
     }
+
 
     //metoda koja sumira elemente jednodimenzionalnog array pomocu while petlje
     public static int sumirajElemente(int []arr){
@@ -40,7 +57,7 @@ int rezultatt=sumirajElemente(arr);
         int i =0;
 
         while(i< arr.length){
-            int j=0;  // mora biti izmedji vanjske i unutrasnjeyzasto sto tako krece opet iz pocetka je u while petlji
+            int j=0;  // mora biti izmedji vanjske i unutrasnje zasto sto tako krece opet iz pocetka je u while petlji
             //j se ne resetuje da ide opet ispocetka kao u for petlji
             while (j<arr[i].length){
                 sum=sum+arr[i][j];
@@ -51,7 +68,7 @@ int rezultatt=sumirajElemente(arr);
         }
         return sum;
     }
-
+//metoda koja mjenja element u array
     public static void replace(int searchNumber, int newNumber, int[][] array) {
         for(int i=0; i< array.length; i++) {
             for(int j=0; j<array[i].length; j++) {

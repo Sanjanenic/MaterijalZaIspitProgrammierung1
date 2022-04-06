@@ -1,17 +1,17 @@
 package ArrayPackage;
 
-public class NapravitiIsprintatiMatrix {
+public class NapravitiIsprintatiMatricu {
     public static void main(String[] args) {
 
-        //pozivam metodu koja generise matrix
+        //pozivam metodu koja generise matricu
         int [][] x =generateIdentityMatrix(5,7);
 
-        //pozivam metodu koja printa matrix ovaj koji sam iznad u main metodi napravila
+        //pozivam metodu koja printa matricu ovaj koji sam iznad u main metodi napravila
         printMatrix(x);
 
     }
 
-    //metoda pravi matrix koji po dijagonali ima vrijednost 1 a ostalo 0
+    //metoda pravi matricu koja po dijagonali ima vrijednost 1 a ostalo 0
 
     public static int[][] generateIdentityMatrix(int sizeX, int sizeY) {   //ovim sam napravila matricu
         int[][] tabelle = new int[sizeX][sizeY];
@@ -28,7 +28,7 @@ public class NapravitiIsprintatiMatrix {
         return tabelle;
     }
 
-    //metoda koja printa matrix
+    //metoda koja printa matricu
     public static void printMatrix(int[][] matrix){
         for(int zeile=0; zeile <matrix.length; ++zeile) {
 

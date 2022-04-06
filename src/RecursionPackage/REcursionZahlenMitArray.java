@@ -5,7 +5,7 @@ public class REcursionZahlenMitArray {
     {
         int[] A = { 0, 0, 0, 0, 1, 1, 1 };
 
-        System.out.println("So viele 1er hier " + countOne(A, 0, A.length - 1));
+        System.out.println("So viele 1 sind in diese Array: " + countOne(A, 0, A.length - 1));
 
     }
 

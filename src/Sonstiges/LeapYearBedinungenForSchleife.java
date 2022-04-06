@@ -2,6 +2,7 @@ package Sonstiges;
 
 public class LeapYearBedinungenForSchleife {
     public static void main(String[] args) {
+
         for( int i = 1; i<=2100; i++){
             isLeapYear(i) ;
         }

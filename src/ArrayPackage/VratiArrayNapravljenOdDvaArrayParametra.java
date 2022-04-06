@@ -20,7 +20,7 @@ public class VratiArrayNapravljenOdDvaArrayParametra {
         System.out.println(Arrays.toString(luckyLooser(namen1, namen2)));
     }
 
-
+//ova metoda nije bas savrsena za Stringove porediti ali ako je neki drugi element unutra onda se moze koristiti, za String->ispod primjer
     public static String[]luckyLooser (String []namen1, String[]namen2){
         int indexKurzer=0;                   //pomocna varijabla za odredjivanje koji je niz kraci
         if(namen1.length<namen2.length){

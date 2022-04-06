@@ -3,7 +3,7 @@ package ObjektOPPackage;
 public class Picture {
     int length;
     int width;
-
+ //metode u klasi ne trebaju static, samo u mainu.
     //metoda racuna broj pixela
     public int totalPixels(){
         int totalNumberOfPixels=0;
@@ -19,7 +19,7 @@ public class Picture {
         return totalSizeVariable;
     }
 
-    //racuna skaliranje, kolika je slika ako se smanji ili povca po nekom faktoru
+    //racuna skaliranje, kolika je slika ako se smanji ili poveca po nekom faktoru
     public void scale(double factor){
 
         length= (int) (length*factor);  //ovako se pretvara u int kad imam double u nekom racunu

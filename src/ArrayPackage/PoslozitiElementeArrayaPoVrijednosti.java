@@ -9,7 +9,9 @@ public class PoslozitiElementeArrayaPoVrijednosti {
         //pozvati void metodu koja ispisuje jednodimenzionalni array
         int [] arr= new int []{8,5,1,9,0,4};
         arrangeOrder(arr);
+
         System.out.println("*******************");
+
         arrangeOrder2(arr);
 
     }
@@ -37,7 +39,7 @@ public class PoslozitiElementeArrayaPoVrijednosti {
 
 //metoda koja sortira od najveceg ka najmanjem
     public static void arrangeOrder2(int[] numbers){
-//trebam pomocnu varijablu
+
         int temp=0;
         for (int iNr=0; iNr< numbers.length; iNr++ ) {
 
@@ -49,11 +51,8 @@ public class PoslozitiElementeArrayaPoVrijednosti {
                     numbers[j]=temp;
                 }
             }
-
         }
         System.out.println(Arrays.toString(numbers));
 
-
     }
-
 }

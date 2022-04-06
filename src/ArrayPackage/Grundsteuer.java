@@ -7,7 +7,7 @@ public class Grundsteuer {
         double summe = 0;
         double [] prices = {3.2, 2.1, 0.9};
 
-        for(int i = 0; i < g.length; ++i){
+        for(int i = 0; i < g.length; ++i){  //for petlja mnozi clanove g niza sa clanovima prices niza
             summe += prices[g[i][0] - 1] * g[i][1] * g[i][2];
         }
         return summe;

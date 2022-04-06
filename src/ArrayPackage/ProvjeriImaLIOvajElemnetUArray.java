@@ -29,7 +29,7 @@ public class ProvjeriImaLIOvajElemnetUArray {
         for (int i = 0; i < array.length; i++) {  //for ide kroz niz
             if(number==array[i]) {                //if provjerava brojeve
                 isContained = true;
-                break;                        //bez break, ne bi ispisao na konzolu
+                break;                        //bez break, ne bi ispisao na konzolu, ne izadje iz petlje
             }
 
 

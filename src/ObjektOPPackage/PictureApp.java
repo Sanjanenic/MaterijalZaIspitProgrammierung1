@@ -14,7 +14,7 @@ public class PictureApp {
         double i=picture.totalSize(3);
         System.out.println("druga "+i);
 
-//pozivam metodu skaliranja
+//pozivam metodu skaliranja(faktor je sad parametar)
         picture.scale(2);
         System.out.println(picture.length);
         System.out.println(picture.width);
