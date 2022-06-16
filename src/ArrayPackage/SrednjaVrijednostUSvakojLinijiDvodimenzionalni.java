@@ -22,15 +22,15 @@ public class SrednjaVrijednostUSvakojLinijiDvodimenzionalni {
     }
 
     public static float[] mittelwertBerechnen (float [][] niz) {
-        float mittelwertArray[] = new float[niz.length]; //pomocni array u koji cu upisati moje srednje vrijednosti
+        float mittelwertArray[] = new float[niz.length];  //pomocni array u koji cu upisati moje srednje vrijednosti
                                                          // za svaku liniju duplog array
         float average=0.0f;
         for (int i = 0; i < niz.length; i++) {
-            float sumPerline = 0.0f;                //ovim setujem sumu na 0 poslije svake linije arraya duplog
-            average = 0.0f;                         // average takodje
+            float sumPerline = 0.0f;                   //ovim setujem sumu na 0 poslije svake linije arraya duplog
+            average = 0.0f;                             // average takodje
             for (int j = 0; j < niz[i].length; j++) {
-
-                if (i == 0) {                               //svaki if racuna za jednu liniju duplog arraya
+                if (i == 0) {
+               //svaki if racuna za jednu liniju duplog arraya
                     sumPerline = (sumPerline + niz[i][j]);
                     average = sumPerline / niz.length;
                 }

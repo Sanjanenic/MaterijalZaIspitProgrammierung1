@@ -3,7 +3,7 @@ package ArrayPackage;
 // die ein int Array als Parameter erhält und den Index
 
 ////    der kleinen Zahl als Rückgabewert zurückliefert
-//ovdje imam i kako vratiti najveci br, indeks kako vratiti,
+//TODO ovdje imam i kako vratiti najveci br, indeks kako vratiti,
 // i kako vratiti array koji sadrzi index i vrijednost
 
 public class NajmanjiBrojArray {
@@ -34,7 +34,7 @@ public class NajmanjiBrojArray {
                                    //bilo bi: return kleinsteZahl=niz[i] u ovoj metodi;
     }
 
-    //ako bi vracala array koji sadrzi index i vrijednost najmanjeg br.
+    //TODO ako bi vracala array koji sadrzi index i vrijednost najmanjeg br.
     //onda: ispred return pravim novi array: int [] ergebnis={indexKleinsteZahl, kleinsteZahl}
                                             // return ergebnis;
 }

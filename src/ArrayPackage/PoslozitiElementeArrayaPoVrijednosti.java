@@ -16,7 +16,7 @@ public class PoslozitiElementeArrayaPoVrijednosti {
 
     }
 
-    //metoda koja sortira elemente array od najmanjeg ka najvecem
+    //TODO metoda koja sortira elemente array od najmanjeg ka najvecem
     public static void arrangeOrder(int[] numbers){
 //trebam pomocnu varijablu
         int temp=0;
@@ -24,7 +24,7 @@ public class PoslozitiElementeArrayaPoVrijednosti {
 
             for(int j=iNr+1; j<numbers.length; j++){
 
-                if(numbers[iNr]>numbers[j]){
+                if(numbers[iNr]>numbers[j]){  //ovako radim zamjenu mjesta u array
                     temp= numbers[iNr];
                     numbers[iNr]=numbers[j];
                     numbers[j]=temp;
@@ -37,7 +37,7 @@ public class PoslozitiElementeArrayaPoVrijednosti {
 
     }
 
-//metoda koja sortira od najveceg ka najmanjem
+//TODO metoda koja sortira od najveceg ka najmanjem
     public static void arrangeOrder2(int[] numbers){
 
         int temp=0;

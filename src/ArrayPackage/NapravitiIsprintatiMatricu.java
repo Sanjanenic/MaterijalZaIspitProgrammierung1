@@ -11,7 +11,7 @@ public class NapravitiIsprintatiMatricu {
 
     }
 
-    //metoda pravi matricu koja po dijagonali ima vrijednost 1 a ostalo 0
+    //TODO metoda pravi matricu koja po dijagonali ima vrijednost 1 a ostalo 0
 
     public static int[][] generateIdentityMatrix(int sizeX, int sizeY) {   //ovim sam napravila matricu
         int[][] tabelle = new int[sizeX][sizeY];
@@ -21,7 +21,7 @@ public class NapravitiIsprintatiMatricu {
                 if (zeile == spalte) {
                     tabelle[zeile][spalte] = 1;  //if blok dodjeljuju vrijednost po dijagonali
                 } else {
-                    tabelle[zeile][spalte] = 0;  //else dodjeljuje ostale dijagonale
+                    tabelle[zeile][spalte] = 0;  //else dodjeljuje ostale vrijednost
                 }
             }
         }

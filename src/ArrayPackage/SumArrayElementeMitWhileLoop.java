@@ -35,7 +35,7 @@ int rezultatt=sumirajElemente(arr);
     }
 
 
-    //metoda koja sumira elemente jednodimenzionalnog array pomocu while petlje
+    //TODO metoda koja sumira elemente jednodimenzionalnog array pomocu while petlje
     public static int sumirajElemente(int []arr){
         //sum je pomocna varijabla koju metoda vraca
         int sum =0;
@@ -49,7 +49,7 @@ int rezultatt=sumirajElemente(arr);
         return sum;
     }
 
-    //kako isto napraviti za dupli array?
+    //TODO kako isto napraviti za dupli array?
 
     public static int sumirajElemente2(int [][]arr){
         //sum je pomocna varijabla koju metoda vraca
@@ -68,7 +68,7 @@ int rezultatt=sumirajElemente(arr);
         }
         return sum;
     }
-//metoda koja mjenja element u array
+//TODO metoda koja mjenja element u array
     public static void replace(int searchNumber, int newNumber, int[][] array) {
         for(int i=0; i< array.length; i++) {
             for(int j=0; j<array[i].length; j++) {

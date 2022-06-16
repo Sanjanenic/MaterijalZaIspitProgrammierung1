@@ -12,7 +12,7 @@ public class ObrnutiRedosledElemenataArray {
                                                      //koji metoda vraca
         }
 
-        //metoda koja obrne niz
+        //TODO metoda koja obrne niz
     public static int[] reverse(int[] original){
 
         int[] result = new int[original.length];
